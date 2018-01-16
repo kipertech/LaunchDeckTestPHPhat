@@ -1,0 +1,3 @@
+rootProject.name = 'LaunchDeckTest'
+
+include ':app'
