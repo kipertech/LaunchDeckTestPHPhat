@@ -67,10 +67,14 @@ export default class ScenePerson extends Component
                             {/* User Information */}
                             <View style={{ flexDirection: 'row', alignItems: 'center' }}>
                                 {/* User Image */}
-                                <View style={{ overflow: 'hidden', borderRadius: 50 }}>
+                                <View style={{ overflow: 'hidden', borderRadius: 50, width: 100, height: 100, borderWidth: 1, borderColor: 'rgba(0, 0, 0, 0.1)', alignItems: 'center', justifyContent: 'center' }}>
+                                    {/* Loading Indicator */}
+                                    <ActivityIndicator/>
+
+                                    {/* Image */}
                                     <Image
                                         source={{ uri: this.state.userInfo.avatar_url }}
-                                        style={{ width: 100, height: 100, backgroundColor: 'white' }}
+                                        style={{ position: 'absolute', top: 0, right: 0, bottom: 0, left: 0 }}
                                         resizeMode={'cover'}
                                     />
                                 </View>
